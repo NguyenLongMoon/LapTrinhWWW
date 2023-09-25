@@ -22,10 +22,12 @@ tasks.withType(JavaCompile) {
 }
 
 dependencies {
+  implementation 'org.jetbrains:annotations:24.0.0'
+  implementation 'org.jetbrains:annotations:24.0.0'
   compileOnly('jakarta.platform:jakarta.jakartaee-web-api:10.0.0')
   // https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client
   implementation 'org.mariadb.jdbc:mariadb-java-client:3.2.0'
-
+  implementation "org.hibernate.orm:hibernate-core:6.3.0.Final"
 
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")

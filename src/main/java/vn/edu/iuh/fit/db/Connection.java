@@ -10,7 +10,7 @@ public class Connection {
     private static Connection connection;
 
     private Connection(){
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("NguyenVanLong-week01-20002975");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("lab_week01_WWW_NguyenVanLong");
         em = emf.createEntityManager();
     }
     public EntityManager entityManager(){
